@@ -1,14 +1,17 @@
 Package: cotraj
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Type: Package
+Title: Simulación de Trayectorias de Cotización para Sistemas de Pensiones
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Diego", "B. Meza", email = "tu_email@dominio.com", role = c("aut", "cre"))
+Description: Este paquete permite simular trayectorias de cotización mensuales, 
+    construyendo cadenas de Markov dependientes de edad y calculando flujos 
+    de aportes con descuento. Ideal para análisis de sostenibilidad en sistemas 
+    de pensiones.
+License: MIT + file LICENSE
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Suggests: 
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
+Imports:
+    data.table,
+    stats
